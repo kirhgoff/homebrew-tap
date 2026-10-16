@@ -1,6 +1,6 @@
 cask "give-me-sub" do
-  version "0.1.0"
-  sha256 "0a01d64965133ff7156d4ea97ab3792c1c064b31b4b770e877e5b9816d7a0798"
+  version "0.1.1"
+  sha256 "57fad5e441328e39756fcae874cd3cd181aff51daefdc8478ef67d77865b6a8d"
 
   url "https://github.com/kirhgoff/give-me-sub/releases/download/v#{version}/GiveMeSub.zip"
   name "GiveMeSub"

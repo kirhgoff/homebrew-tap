@@ -12,15 +12,13 @@ cask "give-me-sub" do
 
   app "GiveMeSub.app"
 
-  uninstall quit: "com.kirill.givemesub"
+  uninstall quit: "com.kirhgoff.givemesub"
 
-  zap trash: [
-    "~/Library/Application Support/Mozilla/NativeMessagingHosts/givemesub.json",
-    "~/Library/Preferences/com.kirill.givemesub.plist",
-  ]
+  zap trash: "~/Library/Containers/com.kirhgoff.givemesub"
 
   caveats <<~EOS
     Non-official tap: run `brew trust --tap kirhgoff/tap` once if Homebrew refuses to load it.
-    First start asks for System Audio Recording. Toggle captions with: open givemesub://toggle
+    GiveMeSub lives in the menu bar (no Dock icon). Toggle captions with ⌃⌥⌘C or: open givemesub://toggle
+    First start asks for System Audio Recording; allow it, or captions stay empty.
   EOS
 end
